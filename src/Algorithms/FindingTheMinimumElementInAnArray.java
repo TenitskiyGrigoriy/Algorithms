@@ -1,3 +1,5 @@
+package Algorithms;
+
 public class FindingTheMinimumElementInAnArray {
     public static void main(String[] args) {
         int[] array = new int[] {64, 42, 73, 41, 31, 65, 15, 25, 67, 42, 74, 54, 36};

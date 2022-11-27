@@ -1,3 +1,5 @@
+package Algorithms;
+
 public class ComparisonQuickSortAndBubbleSort {
     public static void main(String[] args) {
 
