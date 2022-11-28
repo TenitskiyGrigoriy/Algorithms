@@ -2,6 +2,16 @@ package Algorithms_with_Andrey;
 
 import java.util.Scanner;
 
+/**
+ * A three-digit number is given. Find the sum of its digits.
+ *
+ * Input data
+ * A three-digit number is entered.
+ *
+ * Output data
+ * Print the answer to the problem.
+ */
+
 public class SumOfDigits {
     public static void main(String[] args) {
 

@@ -2,6 +2,14 @@ package Algorithms_with_Andrey;
 
 import java.util.Scanner;
 
+/**
+ * Входные данные
+ * Даны два целых числа, каждое число записано в отдельной строке.
+ *
+ * Выходные данные
+ * Выведите наибольшее из данных чисел.
+ */
+
 public class MaximumOfTwoNumbers {
     public static void main(String[] args) {
 

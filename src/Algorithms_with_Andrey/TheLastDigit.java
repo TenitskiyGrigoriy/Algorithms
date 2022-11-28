@@ -2,6 +2,16 @@ package Algorithms_with_Andrey;
 
 import java.util.Scanner;
 
+/**
+ * Given a natural number. Print its last digit.
+ *
+ * Input data
+ * A natural number is entered.
+ *
+ * Output data
+ * Print the answer to the problem.
+ */
+
 public class TheLastDigit {
     public static void main(String[] args) {
 

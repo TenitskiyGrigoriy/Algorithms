@@ -1,7 +1,14 @@
 package Algorithms_with_Andrey;
 
-import java.util.Map;
 import java.util.Scanner;
+
+/**
+ * Input data
+ * Three integers are given, each written in a separate line.
+ *
+ * Output data
+ * Print the largest of these numbers (the program should output exactly one integer).
+ */
 
 public class MaximumOfThree {
     public static void main(String[] args) {

@@ -2,6 +2,16 @@ package Algorithms_with_Andrey;
 
 import java.util.Scanner;
 
+/**
+ * A pie in the dining room costs a rubles and b kopecks. Determine how many rubles and kopecks you need to pay for n pies.
+ *
+ * Input data
+ * The program receives three numbers as input: a, b, n.
+ *
+ * Output data
+ * The program should output two numbers: the purchase price in rubles and kopecks.
+ */
+
 public class PurchasePrice {
     public static void main(String[] args) {
 

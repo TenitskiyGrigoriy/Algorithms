@@ -2,6 +2,17 @@ package Algorithms_with_Andrey;
 
 import java.util.Scanner;
 
+/**
+ * It is required to determine whether this year is a leap year. (Recall that a year is a leap year if its number is a multiple of 4,
+ * but not a multiple of 100, and also if it is a multiple of 400.)
+ *
+ * Input data
+ * A singular number is entered - the year number (a positive integer, not exceeding 30,000).
+ *
+ * Output data
+ * It is required to print the word YES if the year is a leap year and NO otherwise.
+ */
+
 public class LeapYear {
     public static void main(String[] args) {
 
