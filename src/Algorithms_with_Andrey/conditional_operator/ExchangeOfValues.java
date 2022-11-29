@@ -1,4 +1,4 @@
-package Algorithms_with_Andrey;
+package Algorithms_with_Andrey.conditional_operator;
 
 import java.util.Scanner;
 

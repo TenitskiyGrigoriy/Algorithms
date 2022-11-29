@@ -1,24 +1,24 @@
-package Algorithms_with_Andrey;
+package Algorithms_with_Andrey.conditional_operator;
 
 import java.util.Scanner;
 
 /**
- * Given a natural number. Print its last digit.
+ * A two-digit number is given. Find the number of tens in it.
  *
  * Input data
- * A natural number is entered.
+ * A two-digit number is entered.
  *
  * Output data
  * Print the answer to the problem.
  */
 
-public class TheLastDigit {
+public class TheNumberOfTensOfaTwoDigitNumber {
     public static void main(String[] args) {
 
         Scanner intScanner = new Scanner(System.in);
         int startValue = intScanner.nextInt();
 
-        int endValue = startValue % 10;
+        int endValue = startValue / 10;
 
         System.out.println(endValue);
     }
