@@ -23,6 +23,5 @@ public class Does_a_TriangleExist {
         } else {
             System.out.println("NO");
         }
-
     }
 }
