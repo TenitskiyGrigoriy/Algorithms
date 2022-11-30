@@ -1,3 +1,5 @@
+package Algorithms_with_Andrey.calculation_of_sums_and_products;
+
 import java.util.Scanner;
 
 /**
@@ -15,12 +17,12 @@ public class Amount1 {
 
         Scanner intScanner = new Scanner(System.in);
         int n = intScanner.nextInt();
-        int sumN = 1;
-        int value = 1;
+        double sumN = 0.0;
+        double denominator = 1;
 
         for (int i = 0; i < n; i++) {
-            sumN = sumN * value;
-            value = value + 1;
+            sumN = sumN + 1 / Math.pow(denominator, 2);
+            denominator++;
         }
 
         System.out.println(sumN);
