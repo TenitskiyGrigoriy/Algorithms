@@ -1,3 +1,5 @@
+package Algorithms_with_Andrey.calculation_of_sums_and_products;
+
 import java.util.Scanner;
 
 /**
@@ -12,15 +14,14 @@ public class MinimumDivisor {
     public static void main(String[] args) {
 
         Scanner intScanner = new Scanner(System.in);
-        int n = intScanner.nextInt();
-        int sumN = 1;
-        int value = 1;
+        int x = intScanner.nextInt();
 
-        for (int i = 0; i < n; i++) {
-            sumN = sumN * value;
-            value = value + 1;
+        for (int i = 2; i <= x; i++) {
+            if (x % i == 0) {
+                System.out.println(i);
+                break;
+            }
         }
 
-        System.out.println(sumN);
     }
 }
