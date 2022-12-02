@@ -14,15 +14,16 @@ import java.util.Scanner;
 public class GeometricProgression {
     public static void main(String[] args) {
 
-        Scanner intScanner = new Scanner(System.in);
-        int a = intScanner.nextInt();
-        int n = intScanner.nextInt();
-        int sumA = 1;
-        int value = 1;
+        Scanner longScanner = new Scanner(System.in);
+        long a = longScanner.nextLong();
+        long n = longScanner.nextLong();
+        long sumA = 1;
+        long value = 1;
 
         for (int i = 0; i < n; i++) {
-            sumA = (int) (sumA + Math.pow(a, value));
-            value++;
+//            sumA = (long) (sumA + Math.pow(a, i  + 1));
+            value = value * a;
+            sumA = sumA + value;
         }
 
         System.out.println(sumA);

@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 /**
  * Input data
- * A natural number N is introduced, which does not exceed 30.
+ * Integers a and b are entered. It is guaranteed that a does not exceed b.
  *
  * Output data
- * Calculate 1+2+22+23+...+2 N.
+ * Print all the numbers on the segment from a to b that are full squares. If there are no such numbers, then nothing needs to be output.
  */
 
-public class SumOfDegrees {
+public class Squares {
     public static void main(String[] args) {
 
         Scanner intScanner = new Scanner(System.in);
