@@ -1,4 +1,4 @@
-package Algorithms_with_Andrey.andre_the_first;
+package Algorithms_with_Andrey.andrey_the_first;
 
 import java.util.Arrays;
 import java.util.Scanner;
