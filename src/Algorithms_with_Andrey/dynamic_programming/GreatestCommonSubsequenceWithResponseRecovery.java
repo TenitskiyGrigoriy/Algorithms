@@ -1,3 +1,5 @@
+package Algorithms_with_Andrey.dynamic_programming;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
