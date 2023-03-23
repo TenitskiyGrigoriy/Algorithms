@@ -1,3 +1,5 @@
+package Algorithms_with_Andrey.andrey_the_first;
+
 import java.util.Scanner;
 
 /**
@@ -14,12 +16,6 @@ public class GreatestCommonDivisor {
 
         int a = in.nextInt();
         int b = in.nextInt();
-        int answer = 0;
-//        for (int i = 1; i <= Math.min(a,b); i++) {
-//            if (a % i == 0 && b % i == 0){
-//                answer = i;
-//            }
-//        }
 
         System.out.println(gcd(a, b));
     }

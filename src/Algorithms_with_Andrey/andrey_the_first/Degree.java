@@ -22,10 +22,13 @@ public class Degree {
     }
 
     private static double power(double a, int n){
-        double value = 1;
-        for (int i = 0; i < n; i++) {
-            value = value * a;
+        System.out.println(a + " " + n);
+        if (n == 0) {
+            return 1;
+        } else if (n % 2 == 0) {
+            double temp = power(a, n / 2);
+            return temp * temp;
         }
-        return value;
+        return power(a, n - 1) * a;
     }
 }
