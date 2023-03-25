@@ -1,3 +1,5 @@
+package Algorithms_with_Andrey.andrey_the_first;
+
 import java.util.Scanner;
 
 /**
