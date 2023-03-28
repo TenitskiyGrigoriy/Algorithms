@@ -1,6 +1,5 @@
 package Algorithms_with_Andrey.linear_search_in_an_array;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
