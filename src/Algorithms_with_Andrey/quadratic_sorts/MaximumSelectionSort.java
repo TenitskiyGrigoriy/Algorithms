@@ -3,7 +3,7 @@ package Algorithms_with_Andrey.quadratic_sorts;
 import java.util.Scanner;
 
 /**
- * It is required to sort the array in non-descending order using the "inserts" method.
+ * It is required to sort the array in non-descending order using the "select maximum" method.
  *
  * Input data
  * The first line contains one natural number not exceeding 1000 - the size of the array.
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * Output the resulting array.
  */
-public class InsertionSort {
+public class MaximumSelectionSort {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -20,14 +20,18 @@ public class InsertionSort {
         for (int i = 0; i < n; i++) {
             array[i] = in.nextInt();
         }
-        for (int i = 1; i < n; i++) {
-            int additionalVariable = array[i];
-            int index = i - 1;
-            while (index >= 0 && array[index] > additionalVariable){
-                array[index+1] = array[index];
-                index--;
+        int maxIndex;
+
+        for (int i = n - 1; i > 0; i--) {
+            maxIndex = i;
+            for (int j = i - 1; j >= 0; j--) {
+                if (array[j] > array[maxIndex]) {
+                    maxIndex = j;
+                }
             }
-            array[index+1] = additionalVariable;
+            int temp = array[i];
+            array[i] = array[maxIndex];
+            array[maxIndex] = temp;
         }
         for (int i : array) {
             System.out.print(i + " ");

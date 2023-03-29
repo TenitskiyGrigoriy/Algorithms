@@ -22,10 +22,11 @@ public class BubbleSort {
             array[i] = in.nextInt();
         }
         int counter = 0;
+        int j = 0;
         boolean isSorted = false;
         while (!isSorted) {
             isSorted = true;
-            for (int i = 1; i < array.length; i++) {
+            for (int i = 1; i < n - j; i++) {
                 if (array[i] < array[i - 1]) {
                     int temp = array[i];
                     array[i] = array[i - 1];
@@ -34,6 +35,7 @@ public class BubbleSort {
                     isSorted = false;
                 }
             }
+            j++;
         }
         System.out.println(counter);
     }
