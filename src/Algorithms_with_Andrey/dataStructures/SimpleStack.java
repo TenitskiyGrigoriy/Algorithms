@@ -1,4 +1,10 @@
+package Algorithms_with_Andrey.dataStructures;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /**
  * Implement a "stack" data structure. Write a program that describes the stack and simulates how the stack works by implementing all the methods listed here.
@@ -32,7 +38,7 @@ public class SimpleStack {
     public static void main(String[] args) {
         Stack s = new Stack(100);
 
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         label:
         while (true) {
@@ -95,6 +101,53 @@ public class SimpleStack {
 
         public void exit() {
             System.out.println("bye");
+        }
+    }
+
+    static class FastReader {
+        BufferedReader br;
+        StringTokenizer st;
+
+        public FastReader() {
+            br = new BufferedReader(
+                    new InputStreamReader(System.in));
+        }
+
+        String next() {
+            while (st == null || !st.hasMoreElements()) {
+                try {
+                    st = new StringTokenizer(br.readLine());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            return st.nextToken();
+        }
+
+        int nextInt() {
+            return Integer.parseInt(next());
+        }
+
+        long nextLong() {
+            return Long.parseLong(next());
+        }
+
+        double nextDouble() {
+            return Double.parseDouble(next());
+        }
+
+        String nextLine() {
+            String str = "";
+            try {
+                if (st.hasMoreTokens()) {
+                    str = st.nextToken("\n");
+                } else {
+                    str = br.readLine();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return str;
         }
     }
 }

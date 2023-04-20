@@ -1,3 +1,5 @@
+package Algorithms_with_Andrey.dataStructures;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
